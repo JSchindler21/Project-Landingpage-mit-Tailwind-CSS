@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <title>BEWERBUNGS AUFGABE</title>
+    <title>Project: Landingpage mit Tailwind CSS</title>
   </head>
   <body>
     <header>
@@ -20,11 +20,11 @@
         <nav
           class="bg-neutral-800 opacity-90 absolute w-full p-4 md:p-1"
         >
-            <p
+            <!-- <p
               class="bg-neutral-900 inline-flex z-20 absolute -top-2 left-14 text-white text-lg md:text-2xl md:px-6 p-3 md:p-4"
             >
               LOGO
-            </p>
+            </p> -->
             <div class=""> 
             <button
               class="nav-toggler p-1 inline-flex absolute right-3 -top-3 items-center hover:bg-neutral-900 rounded md:hidden"
@@ -33,7 +33,7 @@
               <i class="material-icons bg-orange-600 p-3 w-12 text-white">menu</i>
             </button>
             <p class=" md:hidden absolute top-0 p-2 right-24 text-white text-sm inline-flex bg-sky-500 cursor-pointer">DE</p>
-            <p class=" md:hidden absolute top-0 p-2 right-16 text-white text-sm inline-flex active:bg-sky-500 cursor-pointer ">FR</p>
+            <p class=" md:hidden absolute top-0 p-2 right-16 text-white text-sm inline-flex active:bg-sky-500 cursor-pointer ">DE</p>
           </div>
               <div class="hidden top-navbar pl-48 md:inline-flex md:flex-grow" id="navigation">  
             <div class="md:inline-flex md:flex-row flex-col md:items-center justify-end flex right-px ">
@@ -42,18 +42,18 @@
                 src="../image/home.svg"
                 alt="home"
               />
-              <a class="text-white md:mt-0 mt-10 justify-end text-sm px-2 py-2 lg:px-6  inline-flex hover:bg-neutral-700 rounded" href="#"> MODELLE</a>
-              <a class="text-white justify-end text-sm px-2 py-2 lg:px-6  inline-flex hover:bg-neutral-700 rounded" href="#"> QUALITÄT</a>
+              <a class="text-white md:mt-0 mt-10 justify-end text-sm px-2 py-2 lg:px-6  inline-flex hover:bg-neutral-700 rounded" href="#"> ZIMMER</a>
+              <a class="text-white justify-end text-sm px-2 py-2 lg:px-6  inline-flex hover:bg-neutral-700 rounded" href="#"> ÜBER UNS</a>
               <a class="text-white justify-end text-sm px-2 py-2 lg:px-6  inline-flex hover:bg-neutral-700 rounded" href="#"> SERVICE</a>
               <a class="text-white justify-end text-sm px-2 py-2 lg:px-6  inline-flex hover:bg-neutral-700 rounded" href="#"> AKTUELLES</a>
-              <a class="text-white justify-end text-sm px-2 py-2 lg:px-6  inline-flex hover:bg-neutral-700 rounded" href="#"> UNTERNEHMEN</a>
+              <a class="text-white justify-end text-sm px-2 py-2 lg:px-6  inline-flex hover:bg-neutral-700 rounded" href="#"> ANFAHRT</a>
               <img
                 class="w-8 hidden right-0 top-0 md:right-20 md:inline-flex"
                 src="../image/mail.png"
                 alt="mail"
               />
-              <p class="hidden text-white justify-end text-sm md:pl-4 md:px-2 lg:px-6 active:bg-sky-600 md:inline-flex ">DE</p>
-              <p class="hidden text-white justify-end text-sm md:pr-5 lg:px-6 active:bg-sky-600 md:inline-flex">FR</p>
+              <p class="hidden text-white justify-end text-sm md:pl-4 md:px-2 lg:px-6 active:bg-sky-600 cursor-pointer md:inline-flex ">DE</p>
+              <p class="hidden text-white justify-end text-sm md:pr-5 lg:px-6 active:bg-sky-600  cursor-pointer md:inline-flex">EN</p>
             </div>
           
           </div>
@@ -62,8 +62,8 @@
       </div>
 
       <div class="relative">
-        <div class="bg-cover bg-fixed h-full">
-          <img class="bg-gradient-to-tr to-white" src="../image/header1.jpg" alt="header" />
+        <div class="h-full">
+          <img class="" src="../image/Hotel-front.jpg" alt="header" />
         </div>
         <div>
           <img
@@ -83,11 +83,13 @@
         <div
           class="absolute md:w-2/5 sm:w-2/3 w-10/12 flex md:bottom-24 bottom-8 md:right-40 right-5 flex-col opacity-80 bg-white md:p-3"
         >
-          <p class="text-sm md:font-semibold">MAXIMALER BADESPASS</p>
+          <p class="text-sm md:font-semibold">EIN ZAUBERHAFTER ORT</p>
           <p class="text-xs md:text-sm">
-            Normalerweise wird eine Schwimmbadüberdachung nur einmalig gekauft.
-            Gerne helfen wir Ihnen bei der Entscheidungsfindung und Planung
-            Ihrer individuellel Poolüberdachung
+            Das warme Mittelmeerklima und die privilegierte Lage des Hotels führen dazu, 
+            dass dies der perfekte Ort für ein Abendessen an der frischen Luft ist, 
+            umgeben von der Schönheit der Landschaft der Insel. Sie können aus zwei Bars 
+            und 2 Restaurants auswählen, in denen Sie die fantastischen Gerichte 
+            der mediterranen Küche probieren können.
           </p>
         </div>
 
@@ -122,82 +124,78 @@
     <main>
       <div class="bg-neutral-800">
         <h2 class="text-white text-center pt-4 md:text-2xl md:font-semibold">
-          DIE BELIEBTESTEN MODELLVARIANTEN
+          VERSCHIEDENE ZIMMERVARIATEN 
         </h2>
 
         <div
           class="grid grid-cols-1 items-center md:grid-cols-3 mx-2 md:mx-20 my-5 pb-10 gap-3"
         >
           <div class="inline-flex flex-col">
-            <img src="../image/dummy01.jpg" alt="pool" />
+            <img src="../image/room.jpg" alt="pool" />
             <p
               class="text-white text-sm mb-3 md:text-xs text-right p-1 bg-sky-500"
             >
-              NIEDRIGE ÜBERDACHUNGEN
+              STANDART EINZELZIMMER
             </p>
           </div>
           <div class="inline-flex flex-col">
-            <img src="../image/dummy02.jpg" alt="pool" />
+            <img src="../image/standartDZ.jpg" alt="pool" />
             <p
               class="text-white text-sm mb-3 md:text-xs text-right p-1 bg-sky-500"
             >
-              MITTELHOHE ÜBERDACHUNGEN
+              STANDART DOPPELZIMMER
             </p>
           </div>
           <div class="inline-flex flex-col">
-            <img src="../image/dummy03.jpg" alt="pool" />
+            <img src="../image/DOPPELZIMMER.jpg" alt="pool" />
             <p
               class="text-white text-sm mb-3 md:text-xs text-right p-1 bg-sky-500"
             >
-              HOHE ÜBERDACHUNGEN
+             DELUXE DOPPELZIMMER
             </p>
           </div>
           <div class="inline-flex flex-col">
-            <img src="../image/dummy04.jpg" alt="pool" />
+            <img src="../image/family.jpg" alt="pool" />
             <p
               class="text-white text-sm mb-3 md:text-xs text-right p-1 bg-sky-500"
             >
-              NIEDRIGE ÜBERDACHUNGEN
+              SUPERIOR FAMILIENZIMMER
             </p>
           </div>
           <div class="inline-flex flex-col">
-            <img src="../image/dummy05.jpg" alt="pool" />
+            <img src="../image/suite.jpg" alt="pool" />
             <p
               class="text-white text-sm mb-3 md:text-xs text-right p-1 bg-sky-500"
             >
-              MITTELHOHE ÜBERDACHUNGEN
+              JUNIOR SUITE 
             </p>
           </div>
           <div class="inline-flex flex-col">
-            <img src="../image/dummy06.jpg" alt="pool" />
+            <img src="../image/juniorsuite.jpg" alt="pool" />
             <p
               class="text-white text-sm mb-3 md:text-xs text-right p-1 bg-sky-500"
             >
-              HOHE ÜBERDACHUNGEN
+              LUXUS SUITE 
             </p>
           </div>
         </div>
       </div>
 
       <div class="mx-2 md:mx-20 my-5">
-        <h2
-          class="text-orange-600 text-sm md:text-xl pb-1 md:pb-4 font-semibold"
+        <p
+          class="text-orange-600 text-center md:text-2xl pb-1 md:pb-4 font-semibold"
         >
-          Die Beliebtesten Modellvarianten
-        </h2>
+          Unsere Poolanlage
+        </p>
 
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <img class="items-center" src="../image/dummy04.jpg" alt="pool" />
+          <img class="items-center" src="../image/pool2.jpg" alt="pool" />
           <div>
-            <p class="text-xs leading-4">
-              Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
-              Svlt. Franz lagt Im komplett verwahrlosten laxl quer durch Bavern
-              Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich
-              Vogel Quax zwickt Johns Pferd Bim. Svlvia wagt quick den Jux bei
-              Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüber Joghurt
-              und Quark. "Fix. Schwyz!" quakt Jürgen blöd vom Paß Victor jagt
-              zwolr Boxkamprer quer uber den groben Sylter Deich Falsches Uben
-              von Xvlophonmusik quält ieden größeren Zwerg. :)
+            <p class="text-ms leading-6">
+              Gepflegte Gärten mit großen Liegeflächen und verwunschenen Rückzugsorten laden ein zum Entspannen, 
+              mit einem spannenden Buch oder einem raffinierten Drink. Aus dem Panorama-Pool schauen Sie bis nach 
+              Artà und in die Bucht von Alcùdia. Das lichtdurchflutete Hallenbad lädt wetterunabhängig zum 
+              sportlichen Schwimmen ein.
             </p>
             <div class="inline-flex flex-row mt-2 bg-neutral-700 text-white">
               <p class="text-xs p-2 px-6 inline-flex md:font-semibold">
@@ -212,22 +210,21 @@
 
       <div class="mx-2 md:mx-20 my-5">
         <h2
-          class="text-orange-600 text-sm md:text-xl pb-1 md:pb-4 font-semibold" >
-          Die Beliebtesten Modellvarianten
+          class="text-orange-600 text-xl text-center md:text-2xl pb-1 md:pb-4 font-semibold" >
+          Unser Frühstücksbuffet
         </h2>
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <img class="md:col-start-2" src="../image/dummy04.jpg" alt="pool" />
+          <img class="md:col-start-2" src="../image/fruerhstueck.jpg" alt="pool" />
           <div class="md:col-start-1 md:row-start-1">
-            <p class="text-xs leading-4">
-              Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
-              Svlt. Franz lagt Im komplett verwahrlosten laxl quer durch Bavern
-              Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich
-              Vogel Quax zwickt Johns Pferd Bim. Svlvia wagt quick den Jux bei
-              Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüber Joghurt
-              und Quark. "Fix. Schwyz!" quakt Jürgen blöd vom Paß Victor jagt
-              zwolr Boxkamprer quer uber den groben Sylter Deich Falsches Uben
-              von Xvlophonmusik quält ieden größeren Zwerg. :)
+            <p class="text-ms leading-6">
+              Freuen Sie sich auf ein hervorragendes Frühstücksbuffet und genießen Sie in Ruhe, 
+              schönem Ambiente und bei Sonnenschein auf der Terrasse. Ob Frühaufsteher oder 
+              Langschläfer auf unserem Buffet finden sich vielfältige Frühstücksleckereien 
+              wie Kaffee- und Teespezialitäten, knusprige Brötchen und Brot, 
+              leckere Croissants, feinste Wurst-, Käse- und Fischspezialitäten, frische Eierspeisen, 
+              saftiges Obst, verschiedene Quark- und Joghurtsorten und vieles mehr 
+              … mit denen der Tag in Ruhe begonnen werden kann.
             </p>
             <div class="inline-flex flex-row mt-2 bg-neutral-700 text-white">
               <p class="text-xs p-2 px-6 inline-flex md:font-semibold">
@@ -241,24 +238,24 @@
 
       <div class="mx-2 md:mx-20 my-5">
         <h2
-          class="text-orange-600 text-sm md:text-xl pb-1 md:pb-4 font-semibold">
-          Die Beliebtesten Modellvarianten
+          class="text-orange-600 text-xl text-center md:text-2xl pb-1 md:pb-4 font-semibold">
+          Unsere einmalige Cocktailbar
         </h2>
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <img class="items-center" src="../image/dummy04.jpg" alt="pool" />
+          <img class="items-center" src="../image/bar.jpg" alt="pool" />
           <div>
-            <p class="text-xs leading-4">
-              Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
-              Svlt. Franz lagt Im komplett verwahrlosten laxl quer durch Bavern
-              Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich
-              Vogel Quax zwickt Johns Pferd Bim. Svlvia wagt quick den Jux bei
-              Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüber Joghurt
-              und Quark. "Fix. Schwyz!" quakt Jürgen blöd vom Paß Victor jagt
-              zwolr Boxkamprer quer uber den groben Sylter Deich Falsches Uben
-              von Xvlophonmusik quält ieden größeren Zwerg. :)
+            <p class="text-ms leading-6">
+            In der Oro Bar genießen Sie moderne und fachmännisch zubereitete Cocktails, 
+            hochwertige Weine & Champagner in stimmungsvollem Ambiente. 
+            Architektonisches Highlight ist die eindrucksvoll beleuchtete, 
+            goldfarben schimmernde Barrückwand.
+            <br>
+            Freuen Sie sich auf eine großen Auswahl an klassischen Drinks, Signature Cocktails
+            und orginellen Kreationen unseres Barmans. Versäumen Sie auch nicht, 
+            den hauseigenen Cocktail "Carrosy Cin".
             </p>
-            <div class="inline-flex flex-row mt-2 bg-neutral-700 text-white">
+            <div class="inline-flex  flex-row mt-2 bg-neutral-700 text-white">
               <p class="text-xs p-2 px-6 inline-flex md:font-semibold">
                 MEHR ERFAHREN
               </p>
@@ -274,7 +271,7 @@
       <div class="p-0.5 top-0 bg-sky-500"></div>
       <div class="bg-neutral-700 flex flex-wrap pb-5 flex-col md:flex-row">
         <p class="text-white pt-8 p-3 md:mx-16 text-xs flex-grow text-center">
-          Copyright 2022 by STILGRENZE GmbH. All rights reserved.
+          Copyright. All rights reserved.
         </p>
         <p
           class="text-white pt-8 p-3 flex-grow text-center text-xs">
